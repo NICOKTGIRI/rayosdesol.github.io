@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/usuario.css">
+    <title>Menú Responsive</title>
+</head>
+<body>
+    
+    <nav class="menu">
+        <ul>
+          
+            <li><a href="../html/inicio.html">Inicio</a></li>
+            <li><a href="../html/Usuario.html" class="active">Formulario de usuario</a></li>
+            <li><a href="../html/Inscripcion.html">Inscripción a curso</a></li>
+            <li><a href="../html/Evaluacio.html">Evaluación de curso</a></li>
+            <li><a href="../html/contenido.html">Creación de contenido educativo</a></li>
+            <li><a href="../html/soporte.html">Soporte tecnico</a></li>
+            <li><a href="../html/Login.html">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h2>Perfil de Usuario</h2>
+        <form id="perfilForm">
+          <input type="text" id="nombre" placeholder="Nombre" required>
+          <input type="text" id="apellido" placeholder="Apellido" required>
+          <input type="file" id="fotoPerfil" accept="image/*">
+          <input type="text" id="informacionContacto" placeholder="Información de contacto" required>
+          <textarea id="historialEducativo" placeholder="Historial educativo o experiencia profesional" required></textarea>
+          <!-- Otros campos adicionales relevantes -->
+          <button type="submit">Guardar cambios</button>
+        </form>
+      </div>
+
+       
+    </div>
+    <div class="content">
+        <!-- Aquí va el contenido de la página -->
+    </div>
+    <script src="../js/usuario.js"></script>
+</body>
+</html>

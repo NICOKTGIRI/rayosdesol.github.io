@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evaluación de Curso</title>
+  <link rel="stylesheet" href="../css/Evaluacion.css">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+           
+            <li><a href="../html/inicio.html">Inicio</a></li>
+            <li><a href="../html/Usuario.html" class="active">Formulario de usuario</a></li>
+            <li><a href="../html/Inscripcion.html">Inscripción a curso</a></li>
+            <li><a href="../html/Evaluacion.html">Evaluación de curso</a></li>
+            <li><a href="../html/contenido.html">Creación de contenido educativo</a></li>
+            <li><a href="../html/soporte.html">Soporte tecnico</a></li>
+            <li><a href="../html/Login.html">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+  <div class="container">
+    <h2>Evaluación de Curso</h2>
+    <form id="evaluacionForm" onsubmit="enviarEvaluacion(event)">
+      <label for="estructuraCurso">Estructura del Curso</label>
+      <select id="estructuraCurso" required>
+        <option value="" disabled selected>Seleccione una opción</option>
+        <option value="excelente">Excelente</option>
+        <option value="bueno">Bueno</option>
+        <option value="regular">Regular</option>
+        <option value="malo">Malo</option>
+      </select>
+
+      <label for="materialCurso">Calidad del Material</label>
+      <select id="materialCurso" required>
+        <option value="" disabled selected>Seleccione una opción</option>
+        <option value="excelente">Excelente</option>
+        <option value="bueno">Bueno</option>
+        <option value="regular">Regular</option>
+        <option value="malo">Malo</option>
+      </select>
+      
+      <label for="claridadInstrucciones">Claridad de las Instrucciones</label>
+      <select id="claridadInstrucciones" required>
+        <option value="" disabled selected>Seleccione una opción</option>
+        <option value="excelente">Excelente</option>
+        <option value="bueno">Bueno</option>
+        <option value="regular">Regular</option>
+        <option value="malo">Malo</option>
+      </select>
+
+      <textarea id="comentarios" placeholder="Comentarios adicionales (opcional)"></textarea>
+
+      <button type="submit">Enviar Evaluación</button>
+    </form>
+  </div>
+
+  <script src="../js/evaluacion.js"></script>
+  <script>
+    function enviarEvaluacion(event) {
+      event.preventDefault(); // Evita que se envíe el formulario de forma predeterminada
+      alert('Envío exitoso'); // Muestra el mensaje de envío exitoso
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    background-image: url(../img/fondo1.avif);
+
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background-color: #e3fef764;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input,
+select,
+button {
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+    width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus {
+    outline: none;
+}
+
+button {
+    background-color: #88cae0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5f9dcc;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    text-align: center;
+}
+
+/* Estilos para el diseño de columnas */
+.form-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem; /* Margen de 1 rem entre filas y columnas */
+}
+ 
+p {
+    text-align: center;
+    margin-top: 2px;
+  }
+  
+  a {
+    color: #7baced;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

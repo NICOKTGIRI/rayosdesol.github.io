@@ -1,0 +1,144 @@
+/* Estilos generales */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://img.freepik.com/vector-premium/educacion-linea-doodle-ilustracion-vectorial-costuras-patron-aprendizaje-electronico-sobre-fondo-azul_582123-6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e3fef78d;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+   
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="file"],
+textarea {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #f9f7f7;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px;
+    background-color: #176b87b0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #273f52;
+}
+
+/* Estilos para el menú */
+.menu {
+    background-color: #176b87e1;
+    color: #fff;
+    padding: 10px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #36acd3cd;
+}
+
+/* Estilos para el menú responsive */
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        margin-bottom: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin-bottom: 5px;
+        transition: transform 0.3s ease;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(5px) rotate(45deg);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-5px) rotate(-45deg);
+    }
+
+    .menu ul {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu.active ul {
+        display: block;
+    }
+}
+

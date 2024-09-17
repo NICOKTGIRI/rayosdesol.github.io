@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creación de Contenido Educativo</title>
+  <link rel="stylesheet" href="../css/contee.css">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+          
+            <li><a href="../html/inicio.html">Inicio</a></li>
+            <li><a href="../html/Usuario.html" class="active">Formulario de usuario</a></li>
+            <li><a href="../html/Inscripcion.html">Inscripción a curso</a></li>
+            <li><a href="../html/Evaluacion.html">Evaluación de curso</a></li>
+            <li><a href="../html/contenido.html">Creación de contenido educativo</a></li>
+            <li><a href="../html/soporte.html">Soporte tecnico</a></li>
+            <li><a href="../html/Login.html">Cerrar sesión</a></li>
+            
+        </ul>
+    </nav>
+  <div class="container">
+    <h2>Creación de Contenido Educativo</h2>
+    <form id="contenidoForm">
+      <input type="text" id="titulo" placeholder="Título" required>
+      <textarea id="descripcion" placeholder="Descripción" required></textarea>
+      <label for="materialLectura">Material de Lectura</label>
+      <input type="file" id="materialLectura" accept=".pdf, .doc, .docx">
+      <label for="video">Video</label>
+      <input type="file" id="video" accept="video/*">
+      <label for="tarea">Tarea</label>
+      <input type="file" id="tarea" accept=".pdf, .doc, .docx">
+      <label for="cuestionario">Cuestionario</label>
+      <input type="file" id="cuestionario" accept=".pdf, .doc, .docx">
+      
+      <button type="submit">Crear Contenido</button>
+    </form>
+  </div>
+
+  <script src="contee.js"></script>
+</body>
+</html>

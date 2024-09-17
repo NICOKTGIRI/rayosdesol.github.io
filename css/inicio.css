@@ -1,0 +1,140 @@
+/* Estilos generales */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://img.freepik.com/vector-premium/educacion-linea-doodle-ilustracion-vectorial-costuras-patron-aprendizaje-electronico-sobre-fondo-azul_582123-6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.welcome, .course-info {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 300px;
+    justify-content: flex-end;
+    position: relative;
+    padding: 20px;
+}
+
+h1, h3 {
+    color: #007bff;
+}
+
+ol {
+    list-style-type: disc;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.menu {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 250px;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+.menu ol {
+    padding: 0;
+    margin-top: 0px;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #434141;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.menu a.active {
+    background-color: #fff;
+    color: #000;
+    position: relative;
+}
+
+.menu a.active::after {
+    display: none;
+}
+
+.menu a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+}
+
+img {
+    margin-right: 20px;
+    position: absolute;
+    top: 10;
+    right: 100px;
+    width: 150px;
+    height: auto;
+}
+
+.planet {
+    margin-right: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: auto;
+}
+
+/* Media Queries para hacer responsive */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .welcome, .course-info {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .menu {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    img, .planet {
+        position: static;
+        margin-right: 0;
+        margin-top: 10px;
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+    }
+}

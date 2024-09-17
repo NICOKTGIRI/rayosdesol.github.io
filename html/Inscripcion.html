@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscripción en Curso</title>
+  <link rel="stylesheet" href="../css/curso.css">
+</head>
+<body>
+  
+    <nav class="menu">
+        <ul><!--link de las paginas--> 
+         
+            <li><a href="../html/inicio.html">Inicio</a></li>
+            <li><a href="../html/Usuario.html" class="active">Formulario de usuario</a></li>
+            <li><a href="../html/Inscripcion.html">Inscripción a curso</a></li>
+            <li><a href="../html/Evaluacion.html">Evaluación de curso</a></li>
+            <li><a href="../html/contenido.html">Creación de contenido educativo</a></li>
+            <li><a href="../html/soporte.html">Soporte tecnico</a></li>
+            <li><a href="../html/Login.html">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+  <div class="container"><!--seleccion de curso--> 
+    <h2>Inscripción en Curso</h2>
+    <select id="Curso" required>
+        <option value="" disabled selected>Seleccione curso</option>
+        <option value="primaria">Matemáticas</option>
+        <option value="secundaria">Historia</option>
+        <option value="preparatoria">Química</option>
+        <option value="universidad">Informatica</option>
+        <option value="posgrado">Artes</option>
+      </select>
+      
+      <div class="info-curso"><!--informacion del curso--> 
+        <p id="descripcion">Descripción del curso: </p>
+        <p id="instructor">Instructor: </p>
+        <p id="fecha-inicio">Fecha de inicio: </p>
+        <p id="duracion">Duración del curso: </p>
+      </div>
+      <div class="buttons">
+        <button type="submit" id="registroEstudianteBtn">Inscribir curso </button>
+       </div>
+  </div>
+  
+
+  <script src="../js/inscripcion.js"></script>
+</body>
+</html>

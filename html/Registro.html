@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleRe.css">
+    <title>Registro</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Registrate aqui!</h2>
+    
+    <select id="tipoRegistro">
+        <option value="" disabled selected>seleccione tipo de registro</option>
+      <option value="estudiante">Estudiante</option>
+      <option value="profesor">Profesor</option>
+    </select>
+    
+    <form id="registroEstudianteForm" style="display:block;">
+      <input type="text" id="nombreEstudiante" placeholder="Nombre" required>
+      <input type="text" id="apellidoEstudiante" placeholder="Apellido" required>
+      <input type="email" id="emailEstudiante" placeholder="Correo electrónico" required>
+      <input type="password" id="passwordEstudiante" placeholder="Contraseña" required>
+      <input type="number" id="edadEstudiante" placeholder="Edad" required>
+  
+      <select id="nivelEducativoEstudiante" required>
+        <option value="" disabled selected>Selecciona tu nivel educativo</option>
+        <option value="primaria">Primaria</option>
+        <option value="secundaria">Secundaria</option>
+        <option value="preparatoria">Bachillerato</option>
+        <option value="universidad">Universidad</option>
+        <option value="posgrado">Posgrado</option>
+      </select><br>
+  
+      <input type="text" id="institucionEstudiante" placeholder="Institución a la que perteneces" required>
+      
+      <div class="buttons">
+       <button type="submit" id="registroEstudianteBtn">Registrarse </button>
+       <p>Ya tienes una cuenta? <a href="../html/Login.html" id="registroLink">Ingresa aquí</a></p>
+      </div>
+    </form>
+    
+    <form id="registroProfesorForm" style="display:none;">
+      <input type="text" id="nombreProfesor" placeholder="Nombre" required>
+      <input type="text" id="apellidoProfesor" placeholder="Apellido" required>
+      <input type="email" id="emailProfesor" placeholder="Correo electrónico" required>
+      <input type="password" id="passwordProfesor" placeholder="Contraseña" required>
+      <input type="text" id="especializacion" placeholder="Área de especialización" required>
+      <input type="number" id="experiencia" placeholder="Experiencia docente (años)" required>
+      <input type="text" id="certificaciones" placeholder="Certificaciones o títulos relevantes" required>
+      <div class="buttons">
+        <button type="submit" id="registroProfesorBtn">Registrarse</button>
+        <p>Ya tienes una cuenta? <a href="../html/Login.html" id="registroLink">Ingresa aquí</a></p>
+      </div>
+    </form>
+  </div>
+
+  <script src="../js/scriptRe.js"></script>
+</body>
+</html>

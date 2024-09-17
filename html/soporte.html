@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Soporte Técnico</title>
+  <link rel="stylesheet" href="../css/soporte.css">
+</head>
+<body>
+   
+    <nav class="menu">
+        <ul>
+           
+            <li><a href="../html/inicio.html">Inicio</a></li>
+            <li><a href="../html/Usuario.html" class="active">Formulario de usuario</a></li>
+            <li><a href="../html/Inscripcion.html">Inscripción a curso</a></li>
+            <li><a href="../html/Evaluacion.html">Evaluación de curso</a></li>
+            <li><a href="../html/contenido.html">Creación de contenido educativo</a></li>
+            <li><a href="../html/soporte.html">Soporte técnico</a></li>
+            <li><a href="../html/Login.html">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+  <div class="container">
+    <h2>Formulario de Soporte Técnico</h2>
+    <form id="soporteForm" onsubmit="enviarSolicitud(event)">
+      <textarea id="problema" placeholder="Descripción del problema" required></textarea>
+      <label for="capturas">Adjuntar Capturas de Pantalla</label>
+      <input type="file" id="capturas" accept="image/*" multiple>
+      <input type="text" id="nombre" placeholder="Nombre" required>
+      <input type="email" id="email" placeholder="Correo electrónico" required>
+      <input type="tel" id="telefono" placeholder="Teléfono" required>
+      <!-- Otros campos adicionales relevantes -->
+      <button type="submit">Enviar Solicitud</button>
+    </form>
+  </div>
+
+ 
+  <script>
+    function enviarSolicitud(event) {
+      event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+      // Mostrar mensaje de éxito
+      alert('Enviado con éxito');
+    }
+  </script>
+</body>
+</html>
